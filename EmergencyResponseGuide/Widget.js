@@ -131,7 +131,7 @@ define([
       _spillLocationSym: null, //Object to hold spill Location Symbol
       _IIZoneSym: null, //Object to hold II Zone Symbol
       _PAZoneSym: null, //Object to hold PA Zone Symbol
-      _downwindZoneSym: null, //Object to hold Down Wind Zone Symbol
+      _downwindZoneSym: null, //Object to hold Downwind Zone Symbol
       _fireZoneSym: null, //Object to hold FIRE Zone Symbol
       _bleveZoneSym: null, //Object to hold BLEVE Zone Symbol      
       _renderer: null, // renderer to be used on the ERG Feature Service
@@ -751,7 +751,7 @@ define([
                   "style": updatedSettings.PAZoneFillColor.type
                 }
               }, {
-                "value": "Down Wind",
+                "value": "Downwind",
                 "symbol": {
                   "color": [downwindZoneFillColor.r,
                     downwindZoneFillColor.g,
@@ -1061,7 +1061,7 @@ define([
               this.windDirection.getValue() * -1,spillLocation);
                       
             var PAAGraphic = new Graphic(protectiveActionArea);
-            PAAGraphic.setAttributes({"type": "Down Wind"});
+            PAAGraphic.setAttributes({"type": "Downwind"});
             var PAZoneGraphic = new Graphic(PAZoneArea);
             PAZoneGraphic.setAttributes({"type": "Protective Action Area"});
             
